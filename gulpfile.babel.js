@@ -204,6 +204,10 @@ gulp.task('build:fonts', function () {
 gulp.task('serve', function (done) {
     server.init({
         server: destDir,
+        port: 3100,
+        ui: {
+            port: 3101,
+        },
         startPath: '',
         logLevel: 'silent',
     });
